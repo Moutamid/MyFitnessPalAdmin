@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark">#1C2126</color>
+    <color name="dark3">#A13C3F42</color>
+    <color name="transparent">#001C2126</color>
+    <color name="dark2">#2C2C2E</color>
+    <color name="radio_uncheck">#2C2C2E</color>
+    <color name="yellow">#D0FD3E</color>
+    <color name="bottomNav">#D0FD3E</color>
+    <color name="bottomNavText">#1C2126</color>
+    <color name="bottomNavIndicator">#D0FD3E</color>
+    <!--    <color name="yellow">#E0FE10</color>-->
+    <color name="grey">#BCBEBF</color>
+    <color name="grey_dark">#7C7C7C</color>
+    <color name="red">#FF2424</color>
+    <color name="light_yelow">#68EFFEBE</color>
+    <color name="popup">#FF191919</color>
+    <color name="image_overlay">#951C2126</color>
+    <color name="gold">#FFD43B</color>
+</resources>

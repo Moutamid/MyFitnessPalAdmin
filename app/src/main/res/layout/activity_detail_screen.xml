@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    tools:context=".DetailScreenActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardBackgroundColor="@color/dark"
+        app:cardCornerRadius="0sp"
+        app:cardElevation="8sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12sp"
+                android:src="@drawable/arrow_back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12sp"
+                android:fontFamily="@font/archivo"
+                android:gravity="start|center"
+                android:text="Rank"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo"
+                android:padding="12sp"
+                android:gravity="center"
+                android:text="Verify Player Performance"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ranked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:cardBackgroundColor="@color/dark3"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="0sp"
+                app:strokeWidth="0sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="12sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Name"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:layout_marginStart="10sp"
+                            tools:text="Suleman"
+                            android:textAllCaps="true"
+                            android:textColor="@color/yellow"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_margin="10sp"
+                        android:background="@color/grey_dark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Email"
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:layout_marginStart="10sp"
+                            tools:text="sunnybajwa904@gmail.com"
+                            android:textColor="@color/yellow"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_margin="10sp"
+                        android:background="@color/grey_dark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="ID"
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:layout_marginStart="10sp"
+                            tools:text="fewweoouwe98536sg"
+                            android:textColor="@color/yellow"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:cardBackgroundColor="@color/dark3"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="0sp"
+                app:strokeWidth="0sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="12sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Squat"
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/squat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="22 Kg"
+                            android:textAllCaps="true"
+                            android:textColor="@color/yellow"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_margin="10sp"
+                        android:background="@color/grey_dark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Dead lift"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/deadLift"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="22 Kg"
+                            android:textAllCaps="true"
+                            android:textColor="@color/yellow"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_margin="10sp"
+                        android:background="@color/grey_dark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Bench"
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/bench"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            tools:text="22 Kg"
+                            android:textAllCaps="true"
+                            android:textColor="@color/yellow"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                android:layout_weight="1"
+                app:cardElevation="0sp">
+
+                <VideoView
+                    android:id="@+id/video"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/disapprove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:layout_margin="12sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Disapprove"
+                android:layout_marginBottom="10sp"
+                android:includeFontPadding="false"
+                android:drawableTint="@color/dark"
+                android:textColor="@color/dark"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/approve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:layout_margin="12sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Approve"
+                android:layout_marginBottom="10sp"
+                android:includeFontPadding="false"
+                android:drawableTint="@color/dark"
+                android:textColor="@color/dark"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
